@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import "../node_modules/remixicon/fonts/remixicon.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "../node_modules/animate.css/animate.min.css";
+
+$navbar-nav-link-padding-x: 2rem;
+$font-family-sans-serif: Poppins;
+$body-bg: hsl(19, 100%, 96%);
+$primary: hsl(19, 64%, 54%);
+$warning: #590d22;
+$btn-border-radius: 2rem;
+$btn-padding-x: 1.8rem;
+$btn-padding-y: 0.9rem;
+$body-color: hsl(19, 16%, 35%);
+// $btn-font-size: 0.8rem;
+$font-size-base: 0.9rem;
+$light: hsl(19, 8%, 55%);
+$navbar-toggler-border: none;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// custom
+header {
+  background: $body-bg;
+}
+.navbar-brand-logo {
+  height: 1.5rem;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active {
+  color: #ffffff;
+}
+.btn-icon {
+  vertical-align: middle;
+  font-size: 16px;
+  i {
+    margin-left: 0.1rem;
+  }
+}
+.home-title {
+  img {
+    height: 50px;
+  }
+}
+.dish-card {
+  background-color: hsl(19, 100%, 97%);
+
+  img {
+    transform: translateY(-50px);
+    transition: transform 0.5s;
+  }
+}
+.sub-font {
+  font-family: "Dancing Script";
+}
+.title {
+  font-family: "Lora", serif;
+  color: hsl(19, 16%, 15%);
+}
+.dish-card:hover img {
+  transform: translateY(-60px);
+}
+.btn-input {
+  outline: none;
+  border: none;
+  width: 60%;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.btn-xu {
+  border: none;
+  width: 40%;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+#home {
+  position: relative;
+}
+#home::before {
+  content: url(../img/leaf-branch-2.png);
+  position: absolute;
+  transform: translateX(70px) translateY(-222px) rotate(92deg);
+  width: 45px;
+  opacity: 0.2;
+}
+#home::after {
+  content: url(../img/leaf-branch-4.png);
+  position: absolute;
+  transform: translateX(-269px) rotate(355deg);
+  width: 45px;
+  opacity: 0.2;
+  bottom: 0;
+  right: 0;
+  z-index: -1000;
+}
