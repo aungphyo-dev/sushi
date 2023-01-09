@@ -92,20 +92,4 @@ header {
 #home {
   position: relative;
 }
-#home::before {
-  content: url(../img/leaf-branch-2.png);
-  position: absolute;
-  transform: translateX(70px) translateY(-222px) rotate(92deg);
-  width: 45px;
-  opacity: 0.2;
-}
-#home::after {
-  content: url(../img/leaf-branch-4.png);
-  position: absolute;
-  transform: translateX(-269px) rotate(355deg);
-  width: 45px;
-  opacity: 0.2;
-  bottom: 0;
-  right: 0;
-  z-index: -1000;
-}
+
